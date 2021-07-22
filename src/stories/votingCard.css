@@ -1,0 +1,7 @@
+.card-voting-wrapper {
+  border: 1px solid rgb(34, 65, 150);
+  border-radius: 15px;
+  background-color: rgb(166, 200, 224);
+  padding: 10px;
+  font-family: Tahoma, Verdana, sans-serif;
+}
