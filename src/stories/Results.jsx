@@ -12,9 +12,10 @@ export const Results = ({ votes }) => {
     <ol>
       {
         votes.map((option) => {
+          const totalVotes = Math.round ((option.count* 100) / total)
           return (
-            <li>
-              {`${option.option} - ${option.count} votes (${Math.round ((option.count* 100) / total) }%)`}
+            <li key={option.option}>
+              {`${option.option} - ${option.count} votes (${!!totalVotes ? totalVotes :  0}%)`}
             </li>     
           )
         })
